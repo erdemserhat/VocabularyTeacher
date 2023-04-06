@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#EAEEEF"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".AddVocabularyActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+        android:hint="Enter vocabulary name"
+        android:id="@+id/vocabulary_name"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter the meaning of vocabulary"
+        android:id="@+id/vocabulary_meaning"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center">
+    </EditText>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Write a sample sentence with it"
+        android:id="@+id/vocabulary_example_sentence"
+        android:layout_margin="10dp"
+        android:textSize="20sp"
+        android:textAlignment="center">
+    </EditText>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/select_image"
+        android:layout_margin="20dp"
+        android:text="Select a ımage for your vocabulary">
+
+    </Button>
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/vocabulary_image"
+            android:layout_width="311dp"
+            android:layout_height="214dp"
+            android:layout_margin="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </ImageView>
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_marginBottom="16dp"
+            android:text="Save the vocabulary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vocabulary_image">
+
+        </Button>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</LinearLayout>

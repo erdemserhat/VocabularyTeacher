@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Vocabulary Teacher</string>
+    <string name="take_a_test">Take a test</string>
+    <string name="add_vocabulary">Add Vocabulary</string>
+    <string name="take_a_Test" />
+    <string name="take_a_test2">Take a Test</string>
+    <string name="example_vocabulary">Example Vocabulary</string>
+</resources>
